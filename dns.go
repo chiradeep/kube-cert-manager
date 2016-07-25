@@ -11,7 +11,6 @@
 package main
 
 import (
-	"context"
 	"crypto/sha256"
 	"encoding/base64"
 	"errors"
@@ -23,6 +22,7 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
+	"golang.org/x/net/context"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	googledns "google.golang.org/api/dns/v1"
